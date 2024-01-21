@@ -18,4 +18,3 @@ plt.bar(year, Sexeducation, data=data_df)
 plt.title = "pattern of the exam."
 plt.show()
 
-#
