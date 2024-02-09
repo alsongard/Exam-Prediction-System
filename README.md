@@ -10,3 +10,9 @@ The first phase aims at using topics from the previous questions to predict whic
 >> * [Features]
 >> * [Contributing]
 >> * [Licensse]
+
+
+## RESEARCH
+### plt.bar()
+### plt.xticks()
+### positional and keyword arguments
