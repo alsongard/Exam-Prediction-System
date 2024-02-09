@@ -20,7 +20,7 @@ print("\n")
 # using only for item to get data
 for item in a_list:
     print(f"data is {item} and the type is {type(item)}.")
-
+#iterating through the data seems to specify the data type of the  array.
 print("\n")
 
 #another method for iterating a list using while  statement
@@ -43,6 +43,7 @@ for indexValue,item in enumerate(a_list):
 
 #show an example of how to plot data
 apple = [0.9, 1.3, 0.7, 0.8, 1.8]
+orange = [0.7, 1.9, 0.3, 0.5, 0.7]
 year = list(range(2004,2009))
 #range() lastValue - 1
 plt.bar(year,apple)
@@ -51,6 +52,9 @@ plt.xlabel("year")
 plt.ylabel("apple production")
 plt.show()
 
+plt.bar(year,apple)
+plt.bar(year, orange)
+plt.show()
 #enhance plotting by using sn (seaborn)
 sn.set_style("darkgrid")
 plt.bar(year, apple)
@@ -66,8 +70,8 @@ year = list(range(2004,2011))
 sn.set_style("darkgrid")
 plt.bar(year, sexEducation)
 plt.bar(year, breathingSystem, bottom=sexEducation)
-plt.legend("sexEducation", "breathingSystem")
 plt.title("Exam Data Capture")
+plt.legend("sexEducation", "Breathing System")
 plt.show()
 #from the data collected above it seems it added the values of the topics in each year and present them
 # these method is not preferrable for our system as we want to compare the occurences from the diffrerent topics
